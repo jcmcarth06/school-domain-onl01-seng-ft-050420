@@ -8,8 +8,10 @@ class School
     @roster
   end
 
-  def add_students
-    if 
+  def add_students(name, grade)
+    if @roster[grade] != name
+      nil
+    else [grade] = name
     end
 
   end
